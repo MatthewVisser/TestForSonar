@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="NeonArmageddon">
+    <configurations>
+      <configuration name="NeonArmageddon" target-platform="Desktop" pure-as="true" main-class="NeonArmageddon" output-file="NeonArmageddon.swf" output-folder="$MODULE_DIR$/bin-debug">
+        <dependencies>
+          <entries>
+            <entry library-id="632e327f-9a54-4b5d-9911-7931d3d62f45">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="92c75678-c7a6-46db-90f0-fdd420e72fa3">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="AIRSDK_29" />
+        </dependencies>
+        <compiler-options>
+          <map>
+            <entry key="compiler.locale" value="en_US" />
+          </map>
+        </compiler-options>
+        <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/NeonArmageddon-app.xml" package-file-name="NeonArmageddon">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src-libs/com/greensock/loading/changelog.txt" path-in-package="com/greensock/loading/changelog.txt" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src-libs/feathers/utils/focus/isBetterFocusForRelativePosition_LICENSE" path-in-package="feathers/utils/focus/isBetterFocusForRelativePosition_LICENSE" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/assets" path-in-package="." />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/dll" path-in-package="." />
+          </files-to-package>
+          <AirSigningOptions keystore-path="$MODULE_DIR$/cert/satelitte20193110.p12" use-temp-certificate="false" />
+        </packaging-air-desktop>
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src-libs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dll" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/assets" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="AIRSDK_29" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="632e327f-9a54-4b5d-9911-7931d3d62f45" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/swc" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/swc" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="92c75678-c7a6-46db-90f0-fdd420e72fa3" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ane/NativeSerial.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
